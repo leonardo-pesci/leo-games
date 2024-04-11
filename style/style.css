@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+/* gameContainer */
+#gameContainer {
+    flex-direction: column;
+    gap: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#title h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#computerTable {
+
+}
+
+#playerTable {
+    gap: 15px;
+}
+
+#response {
+
+}
+
+/* Cards */
+.card {
+    width: 120px;
+    height: 180px;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #000000;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.paper {
+    background-image: url(./../img.html/paper.png);
+}
+
+.scissors {
+    background-image: url(./../img.html/scissors.png);
+}
+
+.rock {
+    background-image: url(./../img.html/rock.png);
+}
+
+.questionMark {
+    background-image: url(./../img.html/questionMark.png);
+}
+
