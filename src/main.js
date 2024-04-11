@@ -2,10 +2,11 @@
 const computerCard = document.querySelector('#computerCard')
 const playerCards = document.querySelectorAll('.playerCard')
 const response = document.querySelector('#response')
-const score = document.querySelector('#scoreSpan')
+const scoreSpan = document.querySelector('#scoreSpan')
 
 /* Variabili */
 let possibility = ['paper', 'scissors', 'rock']
+let score = 0
 
 /* Funzioni */
 let resetGame = () => {
@@ -58,10 +59,8 @@ let checkVictory = (player, computer) => {
 }
 
 let setScore = (direction) => {
-    num = score.value
+    if (direction === 'up') score++;
+    else if (direction === 'down') score--;
 
-    if (direction === 'up') num++;
-    else if (direction === 'down') num--;
-
-    score.innerHTML = num
+    scoreSpan.innerHTML = score
 }
