@@ -63,3 +63,8 @@ body {
     background-image: url(./../img.html/questionMark.png);
 }
 
+#response {
+    width: 400px;
+    height: 100px;
+    text-align: center;
+}
