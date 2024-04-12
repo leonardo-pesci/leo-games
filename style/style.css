@@ -78,3 +78,10 @@ body {
     font-size: 1.8rem;
     font-weight: 400;
 }
+
+#table {
+    max-width: 540px;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+}
