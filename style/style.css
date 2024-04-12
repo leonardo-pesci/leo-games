@@ -47,6 +47,7 @@ body {
 .card {
     width: 120px;
     height: 180px;
+    background-image: url(./../img.html/questionMark.png);
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
@@ -79,9 +80,19 @@ body {
     font-weight: 400;
 }
 
+
+
+
+#memoryBody {
+    background-color: #50afac;
+}
+
 #table {
+    width: 80%;
     max-width: 540px;
     flex-wrap: wrap;
     gap: 20px;
     position: relative;
+    top: 0;
+    left: 0;
 }
