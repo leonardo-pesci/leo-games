@@ -35,13 +35,12 @@ let placeCards = () => {
 
 placeCards()
 
-let showCard = () => {
-    cards.forEach( (card) => {
-        card.addEventListener('click', () => {
-            cards[key - 1].style.backgroundImage = `url(./../img.html/${choice}.png`
-        })
+
+cards.forEach( (card, index) => {
+    card.addEventListener('click', () => {
+        card.style.backgroundImage = `url(./../img.html/${cardsAnimals[index + 1]}.png`
     })
-}
+})
 
 let hideCard = () => {
 
