@@ -22,13 +22,23 @@ const cardsAnimals = {
 let placeCards = () => {
     let allCards = animals.concat(animals)
     console.log(allCards)
+    Object.keys(cardsAnimals).forEach( (key) => {
+        index = Math.floor(Math.random() * allCards.length)
+        choice = allCards[index]
+        allCards.splice(index, 1)
+        console.log(index, choice, allCards)
+
+        cardsAnimals[key] = choice
+    });
     
 }
+
+placeCards()
 
 let showCard = () => {
     cards.forEach( (card) => {
         card.addEventListener('click', () => {
-
+            cards[key - 1].style.backgroundImage = `url(./../img.html/${choice}.png`
         })
     })
 }
