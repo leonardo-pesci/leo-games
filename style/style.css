@@ -31,16 +31,8 @@ body {
     font-weight: 600;
 }
 
-#computerTable {
-
-}
-
 #playerTable {
     gap: 15px;
-}
-
-#response {
-
 }
 
 /* Cards */
@@ -79,9 +71,6 @@ body {
     font-size: 1.8rem;
     font-weight: 400;
 }
-
-
-
 
 #memoryBody {
     background-color: #50afac;
