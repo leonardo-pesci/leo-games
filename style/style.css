@@ -48,7 +48,7 @@ body {
 .card {
     width: 120px;
     height: 180px;
-    background-image: url(./../img.html/questionMark.png);
+    background-image: url(./../img/questionMark.png);
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
