@@ -61,13 +61,7 @@ let hideCard = (list) => {
 }
 
 let checkMove = (first, second) => {
-    if (cardsAnimals[first] === cardsAnimals[second]) {
-        score++
-        updateScore()
-    }
-    else {
-        setTimeout(hideCard, 800, [first, second])
-    }
+    if (cardsAnimals[first] !== cardsAnimals[second]) setTimeout(hideCard, 800, [first, second])
 }
 
 let updateScore = () => {

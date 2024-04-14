@@ -12,10 +12,15 @@ body {
 #gameContainer {
     flex-direction: column;
     gap: 60px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+}
+
+#title {
+    position: relative;
+}
+
+#title h1{
+    font-size: 3rem;
+    font-weight: 600;
 }
 
 #score {
@@ -24,12 +29,6 @@ body {
     right: 40px;
     font-size: 2rem;
     font-weight: 600;
-}
-
-#title h1{
-    font-size: 3rem;
-    font-weight: 600;
-    margin-top: 50px;
 }
 
 #computerTable {
@@ -58,19 +57,19 @@ body {
 }
 
 .paper {
-    background-image: url(./../img.html/paper.png);
+    background-image: url(./../img/paper.png);
 }
 
 .scissors {
-    background-image: url(./../img.html/scissors.png);
+    background-image: url(./../img/scissors.png);
 }
 
 .rock {
-    background-image: url(./../img.html/rock.png);
+    background-image: url(./../img/rock.png);
 }
 
 .questionMark {
-    background-image: url(./../img.html/questionMark.png);
+    background-image: url(./../img/questionMark.png);
 }
 
 #response {
