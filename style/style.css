@@ -4,8 +4,31 @@
     margin: 0;
 }
 
+:root {
+    --color-primary: #0F110C;
+    --color-secondary: #084887;
+    --color-tertiaray: #F7F5FB;
+    --color-bg: #909CC2;
+    --color-extra: #FFCB47;
+}
+
 body {
-    background-color: blanchedalmond;
+    color: var(--color-primary);
+    background-color: var(--color-bg);
+}
+
+header {
+    background-color: var(--color-primary);
+}
+
+#myCarousel {
+    background-color: var(--color-tertiaray);
+}
+
+.btn-primary {
+    color: var(--color-primary);
+    background-color: var(--color-extra);
+    border: 0;
 }
 
 /* gameContainer */
@@ -43,7 +66,7 @@ body {
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
-    border: 1px solid #000000;
+    border: 1px solid var(--color-primary);
     border-radius: 16px;
     cursor: pointer;
 }
