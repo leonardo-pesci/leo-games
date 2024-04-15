@@ -67,3 +67,6 @@ let checkMove = (first, second) => {
 let updateScore = () => {
     scoreSpan.innerHTML = score
 }
+
+// todo disabilitare tocco
+// todo schermata di vittoria
