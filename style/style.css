@@ -25,6 +25,10 @@ header {
     background-color: var(--color-tertiaray);
 }
 
+.carousel-caption {
+    height: 100%;
+}
+
 .btn-primary {
     color: var(--color-primary);
     background-color: var(--color-extra);
