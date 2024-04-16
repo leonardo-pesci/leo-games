@@ -44,9 +44,9 @@ cards.forEach( (card, index) => {
     card.addEventListener('click', () => {
         console.log(index)
         card.style.backgroundImage = `url(./../img/${cardsAnimals[index]}.png`
+        if (index === first) return // annulla il secondo tocco della stessa carta
         if (cardSelected % 2 === 0) first = index
         else {
-            if (index === first) return // annulla il secondo tocco della stessa carta
             second = index
             checkMove(first, second)
         }
