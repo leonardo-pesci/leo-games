@@ -8,7 +8,7 @@
     --color-primary: #0F110C;
     --color-secondary: #084887;
     --color-tertiaray: #F7F5FB;
-    --color-bg: #909CC2;
+    --color-bg: #98e193;
     --color-extra: #FFCB47;
 }
 
@@ -53,12 +53,13 @@ header {
     border: 0;
 }
 
-#features {
+.section {
     scroll-margin-top: 64px;
-    margin-bottom: 1000px;
 }
 
-
+.border-bottom {
+    border-bottom: 1px solid #0F110C !important;
+}
 
 
 
@@ -155,7 +156,7 @@ header {
         text-align: center;
     }
 
-    #features, #about {
+    .section {
         scroll-margin-top: 138px;
     }
 
