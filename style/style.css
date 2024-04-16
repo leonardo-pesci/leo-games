@@ -17,7 +17,7 @@ body {
     background-color: var(--color-bg);
 }
 
-header {
+#headerMain {
     background-color: var(--color-primary);
     padding: 12px 0;
 }
@@ -70,18 +70,19 @@ header {
     gap: 60px;
 }
 
-#title {
+.title {
     position: relative;
+    margin-top: 20px;
 }
 
-#title h1{
+.title h1{
     font-size: 3rem;
     font-weight: 600;
 }
 
-#score {
+#morraScore {
     position: absolute;
-    top: 10px;
+    top: 20px;
     right: 40px;
     font-size: 2rem;
     font-weight: 600;
@@ -142,6 +143,50 @@ header {
     left: 0;
 }
 
+#digitaBody {
+    background-color: rgb(212, 99, 99);
+}
+
+#digitaTable {
+    width: 50%;
+    max-width: 400px;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 120px;
+}
+
+#wordSpan {
+    font-size: 1.2rem;
+}
+
+#wordInput {
+    border-radius: 15px;
+    padding: 0 10px;
+}
+
+#wordButton {
+    background-color: var(--color-extra);
+    padding: 4px 10px;
+    border-radius: 15px;
+}
+
+#digitaController {
+    width: 100%;
+    justify-content: space-between;
+}
+
+#errorMessage {
+    color: red;
+    background-color: var(--color-tertiaray);
+    padding: 4px 10px;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: hidden !important;
+} /* ! non funziona */
+
+
 @media screen and (max-width: 991px) {
     header {
         padding-top: 0;
@@ -162,6 +207,3 @@ header {
 
 }
 
-#digitaBody {
-    background-color: rgb(212, 99, 99);
-}

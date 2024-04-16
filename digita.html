@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <!-- Info -->
-        <title>Games</title>
+        <title>Digita veloce</title>
         <link rel="icon" type="image" href="./img/gameController.png">
 
         <!-- Font -->
@@ -17,6 +17,34 @@
 
     </head>
     <body id="digitaBody">
+        <div id="gameContainer" class="container d-flex justify-content-center align-items-center">
+
+            <header class="title">
+                <h1>Digita Veloce</h1>
+            </header>
+
+            <div id="digitaTable" class="d-flex justify-content-center align-items-center">
+                <div id="digitaController" class="d-flex align-items-center">
+                    <div id="digitaScoreBox">
+                        <h5>SCORE</h5>
+                        <div id="digitaScore">0</div>
+                    </div>
+                    <div id="digitaTimerBox">
+                        <h5>TIME</h5>
+                        <div id="digitaTimer">60</div>
+                    </div>
+                </div>
+
+                <span id="wordSpan">Qui comparirà la parola</span>
+                <input id="wordInput" type="text">
+                <button id="wordButton" class="btn btn-primary disabled" onclick="checkWord()">Controlla</button>
+            </div>
+
+            <div id="errorMessage" class="hidden">
+                <span class="hidden">Sbagliata!</span>
+            </div>
+
+        </div>
 
 
 
