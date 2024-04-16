@@ -19,14 +19,31 @@ body {
 
 header {
     background-color: var(--color-primary);
+    padding: 12px 0;
 }
 
 #myCarousel {
     background-color: var(--color-tertiaray);
 }
 
+.carousel-item {
+    height: 300px;
+}
+
 .carousel-caption {
     height: 100%;
+    top: 0;
+    line-height: 40px;
+    padding: 40px 0;
+}
+
+.carousel-caption h1 {
+    font-size: 2.8rem
+}
+
+.carousel-caption p:nth-of-type(1) {
+    font-size: 1.2rem;
+    opacity: 0.85;
 }
 
 .btn-primary {
@@ -121,4 +138,20 @@ header {
     position: relative;
     top: 0;
     left: 0;
+}
+
+@media screen and (max-width: 991px) {
+    header {
+        padding-top: 0;
+    }
+
+    .carousel-caption h1 {
+        font-size: 2.2rem
+    }
+
+    .carousel-caption p:nth-of-type(2){
+        margin-top: 40px;
+        text-align: center;
+    }
+
 }
