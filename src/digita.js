@@ -4,6 +4,8 @@ let wordInput = document.querySelector('#wordInput')
 let wordButton = document.querySelector('#wordButton')
 let scoreSpan = document.querySelector('#digitaScore')
 let timerSpan = document.querySelector('#digitaTimer')
+let message = document.querySelector('#message')
+let againButton = document.querySelector('#againButton')
 
 /* Variables */
 let dictionary = [
@@ -98,10 +100,11 @@ time = 60
 
 /* Functions */
 let startGame = () => {
-    let timerFunction = setInterval(reduceTime, 1000)
+    timerFunction = setInterval(reduceTime, 1000)
     document.removeEventListener('click', startGame)
 
     wordButton.classList.remove('disabled')
+    wordInput.disabled = false;
     selectWord()
 }
 
@@ -109,7 +112,14 @@ let reduceTime = () => {
     time--
     timerSpan.innerHTML = time
 
-    if (time === 0) return
+    if (time === 0) {
+        clearInterval(timerFunction)
+        wordButton.classList.add('disabled')
+        message.classList.remove('visually-hidden')
+        message.innerHTML = 'Tempo scaduto!'
+        againButton.classList.remove('visually-hidden')
+        wordInput.disabled = true;
+    }
 }
 
 let checkWord = () => {
@@ -118,8 +128,9 @@ let checkWord = () => {
         selectWord()
         score++
         scoreSpan.innerHTML = score
+        message.classList.add('visually-hidden')
     } else {
-        console.log('sbagliato')
+        message.classList.remove('visually-hidden')
     }
 }
 
@@ -132,4 +143,6 @@ let selectWord = () => {
 
 /* Events */
 document.addEventListener('click', startGame)
-document.addEventListener('click', startGame)
+document.addEventListener('keydown', (e) => {
+    if (e.code === 'Enter') checkWord()
+})

@@ -166,7 +166,7 @@ body {
 
 #wordButton {
     background-color: var(--color-extra);
-    padding: 4px 10px;
+    padding: 4px 15px;
     border-radius: 15px;
 }
 
@@ -175,15 +175,25 @@ body {
     justify-content: space-between;
 }
 
-#errorMessage {
+#message {
     color: red;
     background-color: var(--color-tertiaray);
     padding: 4px 10px;
     border-radius: 10px;
 }
 
+#againButton {
+    background-color: var(--color-extra);
+    border-radius: 15px;
+    padding: 4px 15px;
+}
+
 .hidden {
     display: hidden !important;
+} /* ! non funziona */
+
+.disabled {
+    cursor: not-allowed !important;
 } /* ! non funziona */
 
 

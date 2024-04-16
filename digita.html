@@ -36,13 +36,14 @@
                 </div>
 
                 <span id="wordSpan">Qui comparirà la parola</span>
-                <input id="wordInput" type="text">
+                <input disabled id="wordInput" type="text">
                 <button id="wordButton" class="btn btn-primary disabled" onclick="checkWord()">Controlla</button>
             </div>
 
-            <div id="errorMessage" class="hidden">
+            <div id="message" class="visually-hidden">
                 <span class="hidden">Sbagliata!</span>
             </div>
+            <button id="againButton" class="btn btn-primary visually-hidden" onclick="location.reload()">Gioca di nuovo!</button>
 
         </div>
 
