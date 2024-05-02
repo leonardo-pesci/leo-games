@@ -61,9 +61,6 @@ body {
     border-bottom: 1px solid #0F110C !important;
 }
 
-
-
-
 /* gameContainer */
 #gameContainer {
     flex-direction: column;
@@ -168,6 +165,7 @@ body {
     background-color: var(--color-extra);
     padding: 4px 15px;
     border-radius: 15px;
+    cursor: not-allowed !important;
 }
 
 #digitaController {
@@ -196,7 +194,6 @@ body {
     cursor: not-allowed !important;
 } /* ! non funziona */
 
-
 @media screen and (max-width: 991px) {
     header {
         padding-top: 0;
@@ -216,4 +213,3 @@ body {
     }
 
 }
-
